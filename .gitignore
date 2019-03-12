@@ -21,4 +21,4 @@ yarn-error.log*
 *.sw*
 
 #Params Ses
-ses_infos.*
+ses_infos.json
