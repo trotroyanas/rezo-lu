@@ -109,7 +109,7 @@
 
 <script>
 import router from "../router";
-const sesinfos = require("@/ses_infos.js");
+const sesinfos = require("../../ses_infos.json");
 
 export default {
   name: "contact",
