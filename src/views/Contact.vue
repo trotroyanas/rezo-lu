@@ -19,13 +19,7 @@
         <div class="column is-half is-offset-one-quarter cc">
           <div class="field">
             <p class="control has-icons-left has-icons-right">
-              <input
-                class="input is-primary"
-                type="email"
-                v-model="email"
-                placeholder="Email"
-                required
-              >
+              <input class="input is-primary" type="email" v-model="email" placeholder="Email">
               <span class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
               </span>
@@ -49,6 +43,13 @@
         <div class="column is-half is-offset-one-quarter cc">
           <div class="control">
             <input class="input is-primary" type="text" v-model="adresse" placeholder="Adresse">
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-half is-offset-one-quarter cc">
+          <div class="control">
+            <input class="input is-primary" type="text" v-model="referent" placeholder="Réferent">
           </div>
         </div>
       </div>
@@ -115,12 +116,13 @@ export default {
   name: "contact",
   data: () => ({
     nom: "",
-    prenom: null,
+    prenom: "",
     email: "",
     tel: "",
-    adresse: null,
-    cp: null,
-    ville: null,
+    referent: "",
+    adresse: "",
+    cp: "",
+    ville: "",
     msg: "",
     fic: ""
   }),
@@ -138,6 +140,8 @@ export default {
                   Prenom : ${this.prenom}<br>
                   Email : ${this.email}<br>
                   Tel : ${this.tel}<br>
+                  Référent : ${this.referent}<br>
+                  Adresse : ${this.adresse}<br>
                   Cp : ${this.cp}<br>
                   Ville : ${this.ville}<br>
                   Message : ${this.msg}<br>`;
